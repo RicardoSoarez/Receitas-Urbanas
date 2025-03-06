@@ -40,10 +40,21 @@ nav ul li a {
     text-decoration: none;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #efebe2;
+    font-size: 24px;
     margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
 }
 
 .hero {
