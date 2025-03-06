@@ -31,7 +31,7 @@
 
     <section class="hero">
         <video autoplay loop muted>
-            <source src="hero-video.mp4" type="video/mp4">
+            <source src="https://framerusercontent.com/assets/KNjmnFp5kwda6KegO13wieYyI0.mp4" type="video/mp4">
         </video>
         <div class="hero-text">
             <h2>Receitas Urbanas</h2>
@@ -40,17 +40,39 @@
     </section>
 
     <section class="content">
-        <div class="card" id="desafios">
-            <h3>Desafios</h3>
-            <p><a href="Desafio.html">Participe de desafios culinários e mostre suas habilidades!</a></p>
-        </div>
-        <div class="card" id="opcoes">
-            <h3>Opções</h3>
-            <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
-        </div>
-        <div class="card" id="sobre">
-            <h3>Sobre Nós</h3>
-            <p><a href="sobrenos.html">Conheça mais sobre o site e nossa missão.</a></p>
+        <div class="card-container">
+            <div class="texto-justificado">
+                <div class="card card-desafios" id="desafios">
+                    <h3>Desafios</h3>
+                    <p><a href="Desafio.html">Participe de desafios culinários e mostre suas habilidades!</a></p>
+                </div>
+            </div>
+            <div class="texto-justificado">
+                <div class=" card card-SOS" id="SOS">
+                    <h3>SOS</h3>
+                    <p><a href="SOS.html">Não sabe o que fazer? está no lugar certo!</a></p>
+                </div>
+            </div>
+                <div class="texto-justificado">
+                    <div class="card card-fitnes" id="fitnes">
+                        <h3>Fitnes</h3>
+                        <p><a href="ReceitasFitnes.html">Nem só de batata viverá o boddybuilder</a></p>
+                    </div>
+                </div>
+            <div class="texto-justificado">
+                <div class="card card-opções" id="opcoes">
+                    <h3>Opções</h3>
+                    <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
+                </div>
+            </div>
+            <div class="texto-justificado">
+                <div class="card card-sobre" id="sobre">
+                    <h3>Sobre Nós</h3>
+                    <p><a href="sobrenos.html">Conheça mais sobre o site e nossa missão.</a></p>
+                </div>
+            </div>
+            
+         
         </div>
     </section>
 
