@@ -54,8 +54,8 @@ h3{
 }
 
 a {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(92, 86, 51); 
+    text-decoration: none; 
 }
 
 a:hover {
