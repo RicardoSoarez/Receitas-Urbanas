@@ -22,6 +22,7 @@ header {
 header h1 {
     font-size: 24px;
     margin: 0;
+    
 }
 
 nav ul {
@@ -46,6 +47,19 @@ texto-justificado {
     padding: 20px; 
     background-color: #f0f0f0; 
     border: 1px solid #ccc; 
+}
+
+h3{
+    color:#0a0b0a
+}
+
+a {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
 }
 
 .social-icons {
@@ -105,40 +119,42 @@ texto-justificado {
     padding: 50px 20px;
 }
 
-.card-desafios{
+.card {
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 50%;
-    text-align: center;
-}
-
-.card-opções{
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    width: 50%;
-    text-align: center;
-}
-
-.card-sobre{
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 70%;
     text-align: center;
+    margin: 10px 0; /* Espaçamento entre os cards */
+    color: #ffffff; /* Cor do texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito visual */
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-desafios {
+    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
+}
+
+.card-opções {
+    background-image: url('https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA.webp?scale-down-to=2048');
+}
+
+.card-sobre {
+    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
+}
+
+.card-SOS {
+    background-image: url('https://framerusercontent.com/images/ZzX6Jkm6hd0otJQyJtqyuEMz4.jpeg?scale-down-to=512');
+}
+
+.card-fitnes {
+    background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
 }
 
 .card h3 {
