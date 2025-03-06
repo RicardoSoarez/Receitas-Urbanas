@@ -45,11 +45,11 @@
         </div>
         <div class="card" id="opcoes">
             <h3>Opções</h3>
-            <p><a href="#">Explore diferentes opções de receitas para todos os gostos</a>.</p>
+            <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
         </div>
         <div class="card" id="sobre">
             <h3>Sobre Nós</h3>
-            <p>Conheça mais sobre o site e nossa missão.</p>
+            <p><a href="sobrenos.html">Conheça mais sobre o site e nossa missão.</a></p>
         </div>
     </section>
 
