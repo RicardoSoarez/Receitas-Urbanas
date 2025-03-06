@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0a0b0a;
-    color: #efebe2;
+    color: #927c48;
     background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #efebe2;
+    color: #927c48;
     text-decoration: none;
 }
 texto-justificado {
@@ -45,12 +45,12 @@ texto-justificado {
     width: 500px; 
     margin: 0 auto; 
     padding: 20px; 
-    background-color: #f0f0f0; 
+    background-color: #ffffff; 
     border: 1px solid #ccc; 
 }
 
 h3{
-    color:#0a0b0a
+    color:#000000
 }
 
 a {
@@ -59,7 +59,7 @@ a {
 }
 
 a:hover {
-    color: #ffffff; /* Cor do texto ao passar o mouse */
+    color: #ffffff; 
 }
 
 .social-icons {
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .card {
-    background-color: #1e1e1e;
+    background-color: #927c48;
     padding: 20px;
     border-radius: 10px;
     background-size: cover;
@@ -128,9 +128,9 @@ a:hover {
     background-repeat: no-repeat;
     width: 70%;
     text-align: center;
-    margin: 10px 0; /* Espaçamento entre os cards */
-    color: #ffffff; /* Cor do texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito visual */
+    margin: 20px 0; 
+    color: #927c48; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .card-container {
