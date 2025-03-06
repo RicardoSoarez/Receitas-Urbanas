@@ -39,6 +39,14 @@ nav ul li a {
     color: #efebe2;
     text-decoration: none;
 }
+texto-justificado {
+    text-align: justify;
+    width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+}
 
 .social-icons {
     display: flex;
@@ -97,11 +105,39 @@ nav ul li a {
     padding: 50px 20px;
 }
 
-.card {
+.card-desafios{
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 50%;
+    text-align: center;
+}
+
+.card-opções{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 50%;
+    text-align: center;
+}
+
+.card-sobre{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
     text-align: center;
 }
 
