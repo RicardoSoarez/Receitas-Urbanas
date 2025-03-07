@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cadastro.css">
     <title>Opções</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-        <nav>
-            <form id="cadastro" method="post" action="cadastrar.php">
+<h1>Cadastro</h1>
+    <nav>
+        <form id="cadastro" method="post" action="cadastrar.php">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
               
@@ -24,7 +24,7 @@
               
                 <input type="submit" value="Cadastrar">
               </form>
-        </nav>
-    
+    </nav>
+<footer><a href="Inicio.html">Voltar</a></footer>
 </body>
 </html>
