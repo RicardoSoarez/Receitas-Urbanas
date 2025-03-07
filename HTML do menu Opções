@@ -10,11 +10,11 @@
     <h1>Opçoes</h1>
         <nav>
             <ul>
-                <li><a href="cadastro.html">Desafio</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
                 <li><a href="suaReceita.html">Sua receita</a></li>
                 <li><a href="sugestões.html">Sugestões</a></li>
             </ul>
         </nav>
-    
+    <footer><a href="Inicio.html">Voltar</a></footer>
 </body>
 </html>
