@@ -9,7 +9,7 @@
 <body>
 <h1 class="Preparo">Modo de Preparo</h1>
 <img src="imagem/2gfd92s7HVhxwye5DZULyhtwM.jpg" alt="Mojito">
-<div>
+<div class="ingredientes">
 <ul> 
     <li>suco de um limão </li>
     <li> 1 dose de rum branco (cerca de 50 ml) </li>
@@ -19,7 +19,7 @@
     <li>club soda ou água com gás para completar</li>
 </ul>
 </div>
-<div>
+<div class="modo_de_fazer">
 <h2> Modo de fazer </h2>
 <ul>
     <lo>Lave e seque bem os ramos de hortelã e o limão.</lo>
