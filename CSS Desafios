@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
+    background-attachment: fixed;
 }
 
 h1, h2, h3, p {
