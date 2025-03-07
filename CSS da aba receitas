@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -10,28 +9,28 @@ body {
 }
 
 ul {
-    list-style-position: inside; /* Coloca o marcador da lista dentro do fluxo do texto */
-    padding-left: 0; /* Remove o padding padrão da lista */
+    list-style-position: inside; 
+    padding-left: 0; 
 }
 
 ul li {
-    text-align: justify; /* Justifica o texto */
-    margin-bottom: 10px; /* Espaçamento entre os itens */
-    padding-left: 20px; /* Adiciona um padding para alinhar o texto */
-    text-indent: -20px; /* Compensa o padding para alinhar o marcador */
+    text-align: justify; 
+    margin-bottom: 10px; 
+    padding-left: 20px; 
+    text-indent: -20px; 
 }
 
 p {
-    flex: 1; /* Faz o parágrafo ocupar todo o espaço restante */
-    text-align: justify; /* Justifica o texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    margin: 0; /* Remove margens padrão */
+    flex: 1; 
+    text-align: justify; 
+    line-height: 1.6; 
+    margin: 0; 
 }
 
 .container {
-    display: flex; /* Usa Flexbox para alinhar os elementos */
-    align-items: flex-start; /* Alinha os itens no topo */
-    gap: 20px; /* Espaçamento entre a imagem e a receita */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -41,9 +40,9 @@ p {
 }
 
 .container_img {
-    display: flex; /* Usa Flexbox para alinhar os elementos */
-    align-items: flex-start; /* Alinha os itens no topo */
-    gap: 20px; /* Espaçamento entre a imagem e a receita */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; /
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -53,9 +52,9 @@ p {
 }
 
 .container2 {
-    display: flex; /* Usa Flexbox para alinhar os elementos */
-    align-items: flex-start; /* Alinha os itens no topo */
-    gap: 20px; /* Espaçamento entre a imagem e a receita */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -65,9 +64,9 @@ p {
 }
 
 .container3 {
-    display: flex; /* Usa Flexbox para alinhar os elementos */
-    align-items: flex-start; /* Alinha os itens no topo */
-    gap: 20px; /* Espaçamento entre a imagem e a receita */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -76,16 +75,16 @@ p {
     border-radius: 10px;
 }
 
-/* Estilo para a imagem */
+
 .imagem img {
-    width: 300px; /* Largura da imagem */
-    height: auto; /* Altura automática para manter a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 300px; 
+    height: auto; 
+    border-radius: 
 }
 
-/* Estilo para a receita */
+
 .receita {
-    flex: 1; /* A receita ocupa o espaço restante */
+    flex: 1; 
 }
 
 .receita h1 {
@@ -111,8 +110,8 @@ p {
 }
 
 .receita p {
-    flex: 1; /* Faz o parágrafo ocupar todo o espaço restante */
-    text-align: justify; /* Justifica o texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    margin: 0; /* Remove margens padrão */
+    flex: 1; 
+    text-align: justify; 
+    line-height: 1.6; 
+    margin: 0; 
 }
