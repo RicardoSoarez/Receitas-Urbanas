@@ -34,7 +34,7 @@
             <source src="https://framerusercontent.com/assets/KNjmnFp5kwda6KegO13wieYyI0.mp4" type="video/mp4">
         </video>
         <div class="hero-text">
-            <h2>Receitas Urbanas</h2>
+            <h2>Sua fome no lugar certo!</h2>
             <p>Descubra novas receitas e desafios culinários!</p>
         </div>
     </section>
@@ -68,7 +68,7 @@
             <div class="texto-justificado">
                 <div class="card card-sobre" id="sobre">
                     <h3>Sobre Nós</h3>
-                    <p><a href="sobrenos.html">Conheça mais sobre o site e nossa missão.</a></p>
+                    <p><a href="sobre.html">Conheça mais sobre o site e nossa missão.</a></p>
                 </div>
             </div>
             
