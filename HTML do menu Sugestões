@@ -1,184 +1,40 @@
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0a0b0a;
-    color: #927c48;
-    background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil</h1>
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #0a0b0a;
-}
+        <!-- Seção Foto e Dados -->
+        <div class="perfil">
+            <!-- Foto -->
+            <div class="foto-perfil">
+                <img src="https://thumbs.dreamstime.com/z/s%C3%ADmbolo-de-perfil-masculino-inteligente-retrato-estilo-desenho-animado-m%C3%ADnimo-166146967.jpg">
+            </div>
 
-header h1 {
-    font-size: 24px;
-    margin: 0;
-    
-}
+            <!-- Dados do Aluno -->
+            <div class="dados">
+                <p><strong>Nome:</strong> <span id="nome-perfil"></span></p>
+                <p><strong>Sexo:</strong> <span id="sexo-perfil"></span></p>
+                <p><strong>Data de Nascimento:</strong> <span id="data-nascimento-perfil"></span></p>
+                <p><strong>Email:</strong> <span id="email-perfil"></span></p>
+                <p><strong>Telefone:</strong> <span id="telefone-perfil"></span></p>
+                <p><strong>Status:</strong> <span id="status-perfil"></span></p>
+                <p><strong>Pontuação:</strong> <span id="pontuacao-perfil">0</span></p>
+            </div>
+        </div>
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #927c48;
-    text-decoration: none;
-}
-texto-justificado {
-    text-align: justify;
-    width: 500px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    background-color: #ffffff; 
-    border: 1px solid #ccc; 
-}
-
-h3{
-    color:#000000
-}
-
-a {
-    color: rgb(92, 86, 51); 
-    text-decoration: none; 
-}
-
-a:hover {
-    color: #ffffff; 
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.social-icons a {
-    color: #efebe2;
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #ffffff;
-}
-
-.hero {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color: #efebe2;
-    text-align: left;
-}
-
-.hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.hero-text {
-    z-index: 1;
-}
-
-.hero-text h2 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 24px;
-    margin: 10px 0 0;
-    
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-}
-
-.card {
-    background-color: #927c48;
-    padding: 20px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 68%;
-    text-align: center;
-    margin: 20px 0; 
-    color: #927c48; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.card-container {
-    display: flex;
-}
-
-.card-desafios {
-    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
-}
-
-.card-opções {
-    background-image: url('https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA.webp?scale-down-to=2048');
-}
-
-.card-sobre {
-    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
-}
-
-.card-SOS {
-    background-image: url('https://framerusercontent.com/images/ZzX6Jkm6hd0otJQyJtqyuEMz4.jpeg?scale-down-to=512');
-}
-
-.card-fitnes {
-    background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
-}
-
-.card-perfil {
-    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
-}
-
-.card h3 {
-    font-size: 24px;
-    margin: 0 0 10px;
-}
-
-.card p {
-    font-size: 16px;
-    margin: 0;
-}
-
-footer {
-    background-color: #0a0b0a;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 10px 0;
-}
+        <!-- Campo para Atualizar Pontuação -->
+        <div class="form-group">
+            <label for="nova-pontuacao">Atualizar Pontuação:</label>
+            <input type="number" id="nova-pontuacao" name="nova-pontuacao" min="0">
+            <button onclick="atualizarPontuacao()">Atualizar</button>
+        </div>
+    </div>
+</body>
+</html>
