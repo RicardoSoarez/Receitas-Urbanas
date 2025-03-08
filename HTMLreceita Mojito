@@ -9,10 +9,13 @@
 
 <body>
     <h1>Mojito</h1>
-    <div class="container">
+    <div class="container_img">
         <div class="imagem">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpVs8AqJio-dnDfd_TRo52QTRnoV5g2Xf2lAgHD_MKRzOhNw97LwMfLOIxhk3oS0P6yk&usqp=CAU" alt="Mojito">
         </div>
+        <h2>Mojito é um coquetel à base de rum branco originário de Cuba </h2>
+    </div>
+    <div class="container">
         <div class="receita">
             <h2>ingredientes</h2>
             <ul> 
