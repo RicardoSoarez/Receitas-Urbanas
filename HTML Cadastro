@@ -1,30 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Aluno</title>
     <link rel="stylesheet" href="style_cadastro.css">
-    <title>Opções</title>
 </head>
 <body>
-<h1>Cadastro</h1>
-    <nav>
-        <form id="cadastro" method="post" action="cadastrar.php">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-              
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-              
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-              
-                <label for="confirmar_senha">Confirmar Senha:</label>
-                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-              
-                <input type="submit" value="Cadastrar">
-              </form>
-    </nav>
-<footer><a href="Inicio.html">Voltar</a></footer>
+    <div class="container">
+        <h1>Cadastre-se</h1>
+        <div class="foto-formulario">
+            
+            <div class="foto">
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <div class="preview-foto" id="preview-foto">
+                    <p>Nenhuma foto selecionada</p>
+                </div>
+            </div>
+
+            
+            <div class="formulario">
+                
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="sexo">Sexo *</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento *</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                
+                <hr>
+
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <div class="telefone-input">
+                        <span>+55</span>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 2345-5789">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label>Status:</label>
+                    <span class="status-ativo">Ativo</span>
+                </div>
+                 
+                 <div class="form-group">
+                    <button type="submit">Enviar Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
