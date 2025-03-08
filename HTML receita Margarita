@@ -9,10 +9,13 @@
 
 <body>
     <h1>Margarita</h1>
-    <div class="container">
+    <div class="container_img">
         <div class="imagem">
             <img src="https://www.allrecipes.com/thmb/RB7pCbCSAa2zNvZ5QZErB87K-BA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/32501-margaritas-on-the-rocks-DDMFS-beauty-4x3-BG-3070-ba9ff637b745426ab1b6c4289260fdad.jpg" alt="Margarita">
         </div>
+        <h2>Um clássico dos filmes</h2>
+    </div>
+    <div class="container">
         <div class="receita">
             <h2> ingredientes</h2>
             <ul> 
@@ -21,8 +24,6 @@
                 <li>20 ml de cointreau</li>
                 <li>raspas de 1 limão pequeno</li>
                 <li> Sal </li>
-                <h3> Sugestão</h3>
-                <p>O sal pode ser substituido por sal marinho ou do himalaia para alterar a testura do Drink</p>
             </ul>
         </div>
     </div>
@@ -36,6 +37,12 @@
                 <li>Passe o limão na borda de uma taça e emborque-a sobre o sal com as raspas de limão no prato, para aderir bem.</li>
                 <li> Por fim, sirva a bebida na taça e aproveite!</li>
             </ol>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="receita">
+            <h3> Sugestão</h3>
+            <p>O sal pode ser substituido por sal marinho ou do himalaia para alterar a testura do Drink</p>
         </div>
     </div>
 
