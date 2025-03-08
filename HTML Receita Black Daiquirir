@@ -9,10 +9,13 @@
 
 <body>
     <h1>Daiquiri Black</h1>
-    <div class="container">
+    <div class="container_img">
         <div class="imagem">
             <img src="https://framerusercontent.com/images/5HcVOJlrUE6rJpxlBtyep43Co.webp?scale-down-to=1024" alt="Black Daiquiri">
         </div>
+        <h1>Delicioso drink para impressionar em um date</h1>
+    </div>
+    <div class="container"> 
         <div class="receita">
             <h2> ingredientes</h2>
             <ul> 
@@ -21,10 +24,10 @@
                 <li>Rum (a gosto) </li>
                 <li> Carvão ativo - 1 comprimido </li>
             </ul>
-            <h2>Sugestão</h2>
-            <p>O uso de um carvão ativado é opcional, pois o mesmo não traz mundança de sabor no drink, apenas uma sensação de dormência ao paladar.</p> </div>
         </div>
     </div>
+
+
     <div class="container2">
         <div class="receita">
             <h2>Modo de fazer</h2>
@@ -37,6 +40,12 @@
                 <li> Coar o gelo na hora de servir na taça.</li>
             </ol>
         </div> 
+    </div>
+    <div class="container3">
+        <div class="receita">
+            <h2>Sugestão</h2>
+            <p>O uso de um carvão ativado é opcional, pois o mesmo não traz mundança de sabor no drink, apenas uma sensação de dormência ao paladar.</p>
+        </div>
     </div>
 
     <footer><a href="Inicio.html">Voltar</a></footer>
