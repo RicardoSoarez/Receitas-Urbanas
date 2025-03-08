@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sua receita </title>
+    <title>Sugestões de Receitas</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+    
 </head>
 <body>
-    <h1>Forneça as informações </h1>
-    <nav>
+    <div class="sugestoes-form">
+        <h2>Sugestões de Receitas</h2>
+        <form action="#" method="post">
+            <label for="nome-do-user">Nick Name/Nome do usuário</label>
+            <input type="text" id="nome-do-user" name="Nick-name" required>
+            <label for="nome-receita">Nome da Receita:</label>
+            <input type="text" id="nome-receita" name="nome-receita" required>
 
-        <form id="cadastro" method="post" action="cadastrar.php">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <input type="submit" value="Cadastrar">
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" required></textarea>
+
+            <label for="modo-fazer">Modo de Fazer:</label>
+            <textarea id="modo-fazer" name="modo-fazer" required></textarea>
+
+            <label for="nivel-dificuldade">Nível de Dificuldade:</label>
+            <select id="nivel-dificuldade" name="nivel-dificuldade" required>
+                <option value="1">1 Estrela</option>
+                <option value="2">2 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="5">5 Estrelas</option>
+            </select>
+
+            <button type="submit">Enviar Receita</button>
         </form>
-    </nav>
-
-
-    <section id="sugestoes">
-        <h1>Insira sua receita</h1>
-        
-
-        <form id="sugestao" method="post" action="salvar_sugestao.php">
-            <label for="comentario">Comentário ou Sugestão:</label><br>
-            <textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea><br><br>
-            
-            <input type="submit" value="Enviar Sugestão">
-        </form>
-    </section>
-    <a href="Inicio.html"> voltar </a>
+    </div>
 </body>
 </html>
