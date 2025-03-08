@@ -1,37 +1,184 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastro e Sugestões</title>
-</head>
-<body>
-    <h1>Cadastro</h1>
-    <nav>
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0b0a;
+    color: #927c48;
+    background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-        <form id="cadastro" method="post" action="cadastrar.php">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <input type="submit" value="Cadastrar">
-        </form>
-    </nav>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0a0b0a;
+}
 
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    
+}
 
-    <section id="sugestoes">
-        <h1>Sugestões</h1>
-        
-        <form id="sugestao" method="post" action="salvar_sugestao.php">
-            <label for="comentario">Comentário ou Sugestão:</label><br>
-            <textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea><br><br>
-            
-            <input type="submit" value="Enviar Sugestão">
-        </form>
-    </section>
-    <a href="Inicio.html"> voltar </a>
-</body>
-</html>
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #927c48;
+    text-decoration: none;
+}
+texto-justificado {
+    text-align: justify;
+    width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+}
+
+h3{
+    color:#000000
+}
+
+a {
+    color: rgb(92, 86, 51); 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #ffffff; 
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #efebe2;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.hero {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: #efebe2;
+    text-align: left;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.card {
+    background-color: #927c48;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 68%;
+    text-align: center;
+    margin: 20px 0; 
+    color: #927c48; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-desafios {
+    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
+}
+
+.card-opções {
+    background-image: url('https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA.webp?scale-down-to=2048');
+}
+
+.card-sobre {
+    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
+}
+
+.card-SOS {
+    background-image: url('https://framerusercontent.com/images/ZzX6Jkm6hd0otJQyJtqyuEMz4.jpeg?scale-down-to=512');
+}
+
+.card-fitnes {
+    background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
+}
+
+.card-perfil {
+    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer {
+    background-color: #0a0b0a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
