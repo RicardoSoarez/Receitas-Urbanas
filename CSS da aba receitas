@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -21,7 +22,7 @@ ul li {
 }
 
 p {
-    flex: 1; 
+    flex: 1;
     text-align: justify; 
     line-height: 1.6; 
     margin: 0; 
@@ -29,7 +30,7 @@ p {
 
 .container {
     display: flex; 
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
@@ -42,7 +43,7 @@ p {
 .container_img {
     display: flex; 
     align-items: flex-start; 
-    gap: 20px; /
+    gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -53,7 +54,7 @@ p {
 
 .container2 {
     display: flex; 
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 20px; 
     max-width: 800px;
     margin: 0 auto;
@@ -75,11 +76,18 @@ p {
     border-radius: 10px;
 }
 
+.container_img h2 {
+    color: #000000;
+
+}
+
 
 .imagem img {
-    width: 300px; 
-    height: auto; 
-    border-radius: 
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    object-fit: cover; 
 }
 
 
