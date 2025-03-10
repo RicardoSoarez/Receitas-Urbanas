@@ -1,0 +1,19 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0b0a;
+    color: #927c48;
+    background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+form {
+    margin-bottom: 20px;
+}
+textarea {
+    width: 100%;
+    max-width: 400px;
+}

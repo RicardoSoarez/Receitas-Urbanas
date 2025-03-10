@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro e Sugestões</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <nav>
+
+        <form id="cadastro" method="post" action="cadastrar.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <input type="submit" value="Cadastrar">
+        </form>
+    </nav>
+
+
+    <section id="sugestoes">
+        <h1>Sugestões</h1>
+        
+        <form id="sugestao" method="post" action="salvar_sugestao.php">
+            <label for="comentario">Comentário ou Sugestão:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" cols="30" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar Sugestão">
+        </form>
+    </section>
+    <a href="Inicio.html"> voltar </a>
+</body>
+</html>
