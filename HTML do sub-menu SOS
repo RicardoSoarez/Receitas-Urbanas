@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>SOS</title>
+</head>
+<body>
+    <header>
+        <h1 class="desafios"></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Bebidas</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="https://images.mrcook.app/recipe-image/019276c7-f856-7d38-9bf2-7a55f00a0659" alt="chá gelado">
+                <div class="text">
+                    <div class="banner">
+                        <h3>Chá Gelado com Limão e Mel</h3>
+                        <p>Uma bebida simples e fácil de fazer para dias quentes</p>
+                        <a href="chágelado_sos.html"> Receita</a>
+                    </div>
+                </div>                
+                </div>
+
+                <div class="card">
+                    <img src="https://www.auroraalimentos.com.br/wp-content/uploads/2022/04/Chocolate-Quente-Cremoso-com-Leite-em-Po%CC%81.jpg" alt="leite cremoso">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Leite Cremoso com Chocolate</h3>
+                                <p>Excelente opção para fazer a alegria da criançada</p>
+                                <a href="leitecremoso_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2022/06/04/1745760027-suco-acerola-morango.jpg" alt="suco de fruta">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Suco de Frutas Express</h3>
+                                <p>rápido e funcional!</p>
+                                <a href="sucodefruta_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section>
+            <h2>Refeições</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2024/01/16112219/omelete-de-batata.jpg">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Omelete Nutritiva</h3>
+                                <p>O básico que funciona!</p>
+                                <a href="omeletenutritiva_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://minhasreceitinhas.com.br/wp-content/uploads/2022/10/macarrao-de-panela-de-pressao-com-calabresa-Sal-de-Flor-1024x683.jpg">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Macarrão de Panela de Pressão</h3>
+                                <p>Celeridade e sem louça para lavar!</p>
+                                <a href="macarraodepanela_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDFV0LGmkgINPC8ubyPFhhWlnrZVb45dBNGrfau-ZPTwf7IG9pPgHi13mbYxEoGHJ6TJodKoHoa65uzZlbDYMZZU7FMLskOQ2mLNmseqYIpClwD0rVIzb8On6xHRbNebRSKPyPsgxIG30/s1600/salada_de_atum+%25281%2529.jpg">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Salada Completa com Atum</h3>
+                                <p>Rápida, fácil e nutritiva</p>
+                                <a href="saladaatum_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+        </section>
+        
+        <section>
+            <h2> Sobremesas </h2>
+            <div class="container">
+                <div class="card">
+                    <img src="https://minhasreceitinhas.com.br/wp-content/uploads/2022/06/brigadeiro-de-microondas-anamariabrogui.jpg">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Brigadeiro de Micro-ondas</h3>
+                                <p>Simples e pratico!</p>
+                                <a href="brigadeiro_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.panelinha.com.br/i1/bk-9696-blogayu4347.webp">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Banana com Canela na Airfryer</h3>
+                                <p>"Uma opção que encaixa até se você estiver de dieta"</p>
+                                <a href="bananacomcanela_sos.html"> Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://static.itdg.com.br/images/360-240/8fed8f60d3c8e3990396e2478cbc7f2a/shutterstock-1905617575-1-.jpg">
+                    <div class="text">
+                        <div class="banner">
+                            <div>
+                                <h3>Mousse Rápido de Maracujá</h3>
+                                <p>Um favorito da família brasileira, tinha que ter sua versão prática não é mesmo?1</p>
+                                <a href="mousse_sos.html"> Receita</a>
+                            </div
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+        </section>
+    </main>
+    <footer><a href="Inicio.html"> Voltar </a></footer>
+</body>
+</html>
