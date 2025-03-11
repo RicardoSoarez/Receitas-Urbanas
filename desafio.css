@@ -1,4 +1,4 @@
-
+/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,10 +21,9 @@ h1 {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: #927c48 ; 
+    color: #927c48; 
     text-transform: uppercase; 
     margin-bottom: 10px; 
-
 }
 
 h2 {
@@ -35,7 +34,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-
 h3 {
     font-size: 20px; 
     font-weight: bold; 
@@ -43,7 +41,6 @@ h3 {
     text-transform: uppercase; 
     margin-bottom: 10px; 
 }
-
 
 p {
     font-size: 16px; 
@@ -81,7 +78,6 @@ p {
     padding: 20px;
     max-width: 800px; 
     margin: 0 auto; 
-    
 }
 
 .card {
@@ -117,9 +113,39 @@ p {
     color: #555;
 }
 
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
     }
 
     .imagem-estatica {
@@ -128,5 +154,37 @@ p {
 
     .conteudo-rolavel {
         overflow-y: visible;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .text h2 {
+        font-size: 16px;
+    }
+
+    .text p {
+        font-size: 10px;
     }
 }
