@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="sugestoes-form">
-        <h2>Sugestões de Receitas</h2>
+        <h2>Sua Receita</h2>
         <form action="#" method="post">
             <label for="nome-do-user">Nick Name/Nome do usuário</label>
             <input type="text" id="nome-do-user" name="Nick-name" required>
@@ -31,7 +31,7 @@
                 <option value="5">5 Estrelas</option>
             </select>
 
-            <button type="submit">Enviar Receita</button>
+            <button type="submit">Enviar Sugestão</button>
         </form>
     </div>
 </body>
