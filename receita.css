@@ -60,10 +60,10 @@ p {
 }
 
 .imagem img {
-    width: 250px;
-    height: 250px;
+    width: 150px; 
+    height: 150px; 
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
 .receita {
