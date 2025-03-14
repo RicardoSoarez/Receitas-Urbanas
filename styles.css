@@ -11,6 +11,7 @@ body {
     background-attachment: fixed;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -18,6 +19,7 @@ header {
     padding: 20px;
     background-color: #0a0b0a;
 }
+
 
 header h1 {
     font-size: 24px;
@@ -54,13 +56,12 @@ h3{
 }
 
 a {
-    color: rgb(0, 0, 0); 
+    color: #000000; 
     text-decoration: none; 
-    transition: color 0.5s ease-in-out;
 }
 
 a:hover {
-    color: #927c48; 
+    color: #ffffff; 
 }
 
 .social-icons {
@@ -124,13 +125,12 @@ a:hover {
 
 .card {
     background-color: #927c48;
-    display: block;
     padding: 20px;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 68%;
+    width: 70%;
     text-align: center;
     margin: 20px 0; 
     color: #927c48; 
@@ -138,20 +138,19 @@ a:hover {
 }
 
 .card-container {
-    display:flex; 
-
+    display: flex;
 }
 
 .card-desafios {
-    background-image: url('https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp?scale-down-to=512');
+    background-image: url('https://framerusercontent.com/images/eN3OMUIE7k3yknjR7LKFRc8TlU.webp?scale-down-to=512');
 }
 
 .card-opções {
-    background-image: url('https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA.webp?scale-down-to=2048');
+    background-image: url('https://framerusercontent.com/images/zdNby1FOPp7GzDhmFMCok60nHO4.webp?scale-down-to=512');
 }
 
 .card-sobre {
-    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
+    background-image: url('https://framerusercontent.com/images/Zn8uzE1W2LH7NspGArV0cjznzbQ.webp?scale-down-to=512');
 }
 
 .card-SOS {
@@ -160,10 +159,6 @@ a:hover {
 
 .card-fitnes {
     background-image: url('https://framerusercontent.com/images/2jL0XFnrv3IvWpJPZ0fX9KcE0M8.jpeg?scale-down-to=512');
-}
-
-.card-perfil {
-    background-image: url('https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp?scale-down-to=512');
 }
 
 .card h3 {
@@ -175,7 +170,6 @@ a:hover {
     font-size: 16px;
     margin: 0;
     visibility: hidden;
-    
 }
 
 footer {
@@ -187,60 +181,6 @@ footer {
 footer p {
     margin: 10px 0;
 }
-
-
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(10, 11, 10, 0.8);
-    border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #927c48;
-}
-
-.ranking-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.ranking-table th, .ranking-table td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-.ranking-table th {
-    background-color: #927c48;
-    color: #0a0b0a;
-    font-size: 18px;
-}
-
-.ranking-table td {
-    color: #efebe2;
-    font-size: 16px;
-}
-
-.ranking-table tr:nth-child(even) {
-    background-color: #222;
-}
-
-.ranking-table tr:hover {
-    background-color: #333;
-}
-
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -256,65 +196,12 @@ h1 {
         margin: 10px 0;
     }
 
-    .hero-text h2 {
-        font-size: 36px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-      .hero-text, .content, .card-container {
+    .hero-text, .content, .card-container {
         flex-direction: column;
         align-items: center;
     }
 
     .card {
         width: 90%;
-    }
-
-    .texto-justificado {
-        width: 90%;
-    }
-
-    .ranking-table th, .ranking-table td {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h2 {
-        font-size: 28px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .card h3 {
-        font-size: 20px;
-    }
-
-    .card p {
-        font-size: 14px;
-    }
-
-    .ranking-table th, .ranking-table td {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 24px;
     }
 }
