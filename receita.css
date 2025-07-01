@@ -166,3 +166,40 @@ p {
         font-size: 12px;
     }
 }
+.button-curtir {
+    max-width: 800px;
+    margin: 7px auto;
+    padding: 0 20px;
+}
+#btCurtir {
+    display:inline-flex;
+    align-items: center;
+    margin: 0px ;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    
+}
+#btCurtir.curtido {
+    background-color: white;
+    color: #040404;
+    box-shadow: 0 2px 4px rgba(254, 123, 123, 0.07);
+
+}
+
+#btCurtir.curtido i {
+    margin-left:5px; 
+    margin-right: 2px;
+    color: red;
+}
+#btCurtir:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-1px); 
+}
+
+#btCurtir.curtido:hover {
+    background-color: #f24949cc;
+}
+
+
