@@ -117,6 +117,16 @@ p {
     color: #555;
 }
 
+footer {
+    background-color: #0a0b0a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
