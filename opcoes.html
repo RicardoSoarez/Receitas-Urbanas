@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba de Opções</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'duvidas')">Dúvidas</button>
+            <button class="tab-button" onclick="openTab(event, 'fale-conosco')">Fale Conosco</button>
+            <button class="tab-button" onclick="openTab(event, 'licencas')">Licenças</button>
+        </div>
+
+        
+        <div id="duvidas" class="tab-content active">
+            <h2>Dúvidas Frequentes</h2>
+            <p>Aqui estão algumas dúvidas comuns:</p>
+            <ul>
+                <li>Como faço para me cadastrar?</li>
+                <li>Como redefinir minha senha?</li>
+                <li>Quais são os métodos de pagamento aceitos?</li>
+            </ul>
+        </div>
+
+        <div id="fale-conosco" class="tab-content">
+            <h2>Fale Conosco</h2>
+            <form id="contatoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="licencas" class="tab-content">
+            <h2>Licenças do Site</h2>
+            <p>Este site está sob a licença MIT. Veja os detalhes abaixo:</p>
+            <pre>
+MIT License
+
+Copyright (c) 2023 Seu Site
+
+Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e arquivos de documentação associados (o "Software"), para lidar
+no Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar,
+modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software...
+            </pre>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil</h1>
+
+        
+        <div class="perfil">
+        
+            <div class="foto-perfil">
+                <img src="https://thumbs.dreamstime.com/z/s%C3%ADmbolo-de-perfil-masculino-inteligente-retrato-estilo-desenho-animado-m%C3%ADnimo-166146967.jpg">
+            </div>
+
+            
+            <div class="dados">
+                <p><strong>Nome:</strong> <span id="nome-perfil"></span></p>
+                <p><strong>Sexo:</strong> <span id="sexo-perfil"></span></p>
+                <p><strong>Data de Nascimento:</strong> <span id="data-nascimento-perfil"></span></p>
+                <p><strong>Email:</strong> <span id="email-perfil"></span></p>
+                <p><strong>Telefone:</strong> <span id="telefone-perfil"></span></p>
+                <p><strong>Status:</strong> <span id="status-perfil"></span></p>
+                <p><strong>Pontuação:</strong> <span id="pontuacao-perfil">0</span></p>
+            </div>
+        </div>
+
+    
+        <div class="form-group">
+            <label for="nova-pontuacao">Atualizar Pontuação:</label>
+            <input type="number" id="nova-pontuacao" name="nova-pontuacao" min="0">
+            <button onclick="atualizarPontuacao()">Atualizar</button>
+        </div>
+    </div>
+</body>
+</html>

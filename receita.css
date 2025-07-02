@@ -1,0 +1,215 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://framerusercontent.com/images/8G8Y8b1ZHwFvDzVUQQlr4waN1DI.jpg');
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ul li {
+    text-align: justify;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+p {
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container, .container_img, .container2, .container3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container {
+    background-color: #a19797;
+}
+
+.container_img {
+    background-color: #998674;
+}
+
+.container2 {
+    background-color: #8b876a;
+}
+
+.container3 {
+    background-color: #998674;
+}
+
+.container_img h2 {
+    color: #000000;
+}
+
+.imagem img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.receita {
+    flex: 1;
+}
+
+.receita h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 15px;
+    
+}
+
+.receita h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.receita ul, .receita ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.receita li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.receita p {
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+}
+
+footer {
+    background-color: #0a0b0a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .container, .container_img, .container2, .container3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .receita h1 {
+        font-size: 22px;
+    }
+
+    .receita h2 {
+        font-size: 18px;
+    }
+
+    .receita ul, .receita ol {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    .receita li {
+        font-size: 14px;
+    }
+
+    .receita p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .container_img, .container2, .container3 {
+        padding: 10px;
+    }
+
+    .imagem img {
+        max-width: 100%;
+    }
+
+    .receita h1 {
+        font-size: 20px;
+    }
+
+    .receita h2 {
+        font-size: 16px;
+    }
+
+    .receita ul, .receita ol {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .receita li {
+        font-size: 12px;
+    }
+
+    .receita p {
+        font-size: 12px;
+    }
+}
+.button-curtir {
+    max-width: 800px;
+    margin: 7px auto;
+    padding: 0 20px;
+}
+#btCurtir {
+    display:inline-flex;
+    align-items: center;
+    margin: 0px ;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    
+}
+#btCurtir.curtido {
+    background-color: white;
+    color: #040404;
+    box-shadow: 0 2px 4px rgba(254, 123, 123, 0.07);
+
+}
+
+#btCurtir.curtido i {
+    margin-left:5px; 
+    margin-right: 2px;
+    color: red;
+}
+#btCurtir:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-1px); 
+}
+
+#btCurtir.curtido:hover {
+    background-color: #f24949cc;
+}
+
+
