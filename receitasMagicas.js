@@ -86,6 +86,7 @@ const receitas = [
   id: 10,
   titulo: "Daiquiri Black",
   categoria: "Desafios",
+  tipo: "Drinks",
   descricao: "Receita especial do Black Daiquiri, feito com carvão ativado e blueberry",
   imagem: "https://images.cocktailwave.com/black-daiquiri.png",
   ingredientes: ["Rum branco", "Suco de limão", "Xarope de açúcar", "Carvão ativado", "Blueberry"],
@@ -97,6 +98,7 @@ const receitas = [
   id: 11,
   titulo: "Margarita",
   categoria: "Desafios",
+  tipo: "Drinks",
   descricao: "Drink italiano preparado com gin, campari e vermute tinto",
   imagem: "https://www.allrecipes.com/thmb/RB7pCbCSAa2zNvZ5QZErB87K-BA=/1500x0/filters:no_upscale()/margarita.jpg",
   ingredientes: ["Tequila", "Triple sec", "Suco de limão", "Sal para a borda"],
@@ -108,6 +110,7 @@ const receitas = [
   id: 12,
   titulo: "Negroni",
   categoria: "Desafios",
+  tipo: "Drinks",
   descricao: "Coquetel mexicano feito com tequila, suco de limão e licor de laranja",
   imagem: "https://framerusercontent.com/images/zFnxOZkQ0Xh6A8k9exj36HmVpg.jpg",
   ingredientes: ["Tequila", "Licor de laranja", "Suco de limão", "Gelo"],
@@ -119,6 +122,7 @@ const receitas = [
   id: 13,
   titulo: "Mojito Tradicional",
   categoria: "Desafios",
+  tipo: "Drinks",
   descricao: "Clássico drink cubano com rum, hortelã, limão e água com gás",
   imagem: "https://framerusercontent.com/images/2gfd92s7HVhxwye5DZULyhtwM.jpg",
   ingredientes: ["Rum branco", "Hortelã", "Limão", "Açúcar", "Água com gás"],
@@ -130,6 +134,7 @@ const receitas = [
   id: 14,
   titulo: "Ravioli",
   categoria: "Desafios",
+  tipo: "Massas",
   descricao: "Massa recheada versátil, pode ser preparada com queijos, carnes ou vegetais",
   imagem: "https://framerusercontent.com/images/um4IWxVcUZze7HlW2WURmaUZ4P8.webp",
   ingredientes: ["Massa de ravioli", "Recheio de sua escolha", "Molho de tomate"],
@@ -141,6 +146,7 @@ const receitas = [
   id: 15,
   titulo: "Capeletti in Brodo",
   categoria: "Desafios",
+  tipo: "Massas",
   descricao: "Sopa italiana com capeletti recheado de carne em caldo saboroso",
   imagem: "https://framerusercontent.com/images/hrtJhnwN8tobHMS7RjoMhOLdtQ8.webp?scale-down-to=512",
   ingredientes: ["Capeletti", "Caldo de carne", "Temperos a gosto"],
@@ -152,6 +158,7 @@ const receitas = [
   id: 16,
   titulo: "Conchiglione de Espinafre e Ricota",
   categoria: "Desafios",
+  tipo: "Massas",
   descricao: "Massa recheada com ricota e espinafre, gratinada com molho branco",
   imagem: "https://framerusercontent.com/images/2PpfjlA2bi2BBjErDJFiDOgGnk.webp?scale-down-to=512",
   ingredientes: ["Conchiglione", "Ricota", "Espinafre", "Molho branco", "Queijo parmesão"],
@@ -163,6 +170,7 @@ const receitas = [
   id: 17,
   titulo: "Bombom de Morango",
   categoria: "Desafios",
+  tipo: "Sobremesas",
   descricao: "Sobremesa gelada com combinação perfeita de morango e chocolate",
   imagem: "https://framerusercontent.com/images/ZzX6Jkm6hd0otJQyJtqyuEMz4.jpeg?scale-down-to=512",
   ingredientes: ["Morangos", "Chocolate meio amargo", "Creme de leite"],
@@ -174,6 +182,7 @@ const receitas = [
   id: 18,
   titulo: "Manjar de Coco",
   categoria: "Desafios",
+  tipo: "Sobremesas",
   descricao: "Doce cremoso de coco com cobertura de ameixas",
   imagem: "https://framerusercontent.com/images/scf07JX5elTr5uSGQ1dAzOeHtI4.webp?scale-down-to=512",
   ingredientes: ["Leite de coco", "Açúcar", "Amido de milho", "Ameixas em calda"],
@@ -185,6 +194,7 @@ const receitas = [
   id: 19,
   titulo: "Cheesecake de Morango",
   categoria: "Desafios",
+  tipo: "Sobremesas",
   descricao: "Clássica cheesecake com cobertura de morango, preparada de forma rápida",
   imagem: "https://framerusercontent.com/images/DfnM8sh6m7EyaUmdSkyFKQz5BI.webp?scale-down-to=512",
   ingredientes: ["Biscoito", "Manteiga", "Cream cheese", "Morango", "Gelatina"],
@@ -289,38 +299,44 @@ function detectarCategoriaDaPagina() {
   if (nomeArquivo.includes("drinks")) return "Drinks";
   if (nomeArquivo.includes("massas")) return "Massas";
 
-  return null;
+  return null; // se não for página específica, mostra tudo
 }
 function gerarCatalogo() {
-  const categoriaAtual = detectarCategoriaDaPagina();
   const container = document.getElementById("catalogo-receitas");
   container.innerHTML = "";
 
-  if (!categoriaAtual) {
-    container.innerHTML = "<p>Nenhuma categoria reconhecida nesta página.</p>";
-    return;
-  }
-
+  const categoriaAtual = detectarCategoriaDaPagina();
   const receitasFiltradas = receitas.filter(r => r.categoria === categoriaAtual);
 
-  const grupo = document.createElement("div");
-  grupo.className = "container";
+  // Agrupar por tipo
+  const tipos = [...new Set(receitasFiltradas.map(r => r.tipo))];
 
-  receitasFiltradas.forEach(receita => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <img src="${receita.imagem}" alt="${receita.titulo}">
-      <div class="text">
-        <h3>${receita.titulo}</h3>
-        <p>${receita.descricao}</p>
-        <button onclick="mostrarDetalhes(${receita.id})">Receita</button>
-      </div>
-    `;
-    grupo.appendChild(card);
+  tipos.forEach(tipo => {
+    const titulo = document.createElement("h2");
+    titulo.textContent = tipo;
+    container.appendChild(titulo);
+
+    const grupo = document.createElement("div");
+    grupo.className = "container";
+
+    receitasFiltradas
+      .filter(r => r.tipo === tipo)
+      .forEach(receita => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${receita.imagem}" alt="${receita.titulo}">
+          <div class="text">
+            <h3>${receita.titulo}</h3>
+            <p>${receita.descricao}</p>
+            <button onclick="mostrarDetalhes(${receita.id})">Receita</button>
+          </div>
+        `;
+        grupo.appendChild(card);
+      });
+
+    container.appendChild(grupo);
   });
-
-  container.appendChild(grupo);
 }
 
 function mostrarDetalhes(id) {
@@ -369,4 +385,5 @@ function mostrarDetalhes(id) {
 function fecharModal() {
   document.getElementById("modal-receita").style.display = "none";
 }
+
 window.onload = gerarCatalogo;
