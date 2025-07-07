@@ -1,135 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="desafio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Black Daiquiri</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas Mágicas</title>
+  <link rel="stylesheet" href="desafio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .text {
+      padding: 15px;
+    }
+
+    .text h3 {
+      margin-top: 0;
+    }
+
+    .text button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    #btCurtir {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #btCurtir.curtido {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 class="desafios"></h1>
-    </header>
-    <main>
-        <section>
-            <h2>Drinks</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://images.cocktailwave.com/black-daiquiri.png" alt="Black Daiquiri">
-                    <div class="text">
-                        <div class="banner">
-                            <h3>Daiquiri Black</h3>
-                            <p>Receita especial do Black Daiquiri, feito com carvão ativado e blueberry.</p>
-                            <button onclick="window.location.href='receita_black.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.allrecipes.com/thmb/RB7pCbCSAa2zNvZ5QZErB87K-BA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/32501-margaritas-on-the-rocks-DDMFS-beauty-4x3-BG-3070-ba9ff637b745426ab1b6c4289260fdad.jpg" alt="Margarita">
-                    <div class="text">
-                        <div>
-                            <h3>Margarita</h3>
-                            <p>Drink italiano preparado com gin, campari e vermute tinto.</p>
-                            <button onclick="window.location.href='receita_Margarita.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/zFnxOZkQ0Xh6A8k9exj36HmVpg.jpg" alt="Negroni">
-                    <div class="text">
-                        <div>
-                            <h3>Negroni</h3>
-                            <p>Coquetel mexicano feito com tequila, suco de limão e licor de laranja.</p>
-                            <button onclick="window.location.href='receita_negroni.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card"> 
-                    <img src="https://framerusercontent.com/images/2gfd92s7HVhxwye5DZULyhtwM.jpg" alt="Mojito">               
-                    <div class="text">
-                        <div>
-                            <h3>Mojito Tradicional</h3>
-                            <p>Clássico drink cubano com rum, hortelã, limão e água com gás.</p>
-                            <button onclick="window.location.href='receita_mojito.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Massas</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/um4IWxVcUZze7HlW2WURmaUZ4P8.webp" alt="Ravioli">
-                    <div class="text">
-                        <div>
-                            <h3>Ravioli</h3>
-                            <p>Massa recheada versátil, pode ser preparada com queijos, carnes ou vegetais.</p>
-                            <button onclick="window.location.href='receita_ravioli.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/hrtJhnwN8tobHMS7RjoMhOLdtQ8.webp?scale-down-to=512" alt="Capeletti in Brodo">
-                    <div class="text">
-                        <div>
-                            <h3>Capeletti in Brodo</h3>
-                            <p>Sopa italiana com capeletti recheado de carne em caldo saboroso.</p>
-                            <button onclick="window.location.href='receita_capeletti.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/2PpfjlA2bi2BBjErDJFiDOgGnk.webp?scale-down-to=512" alt="Conchiglione de Espinafre e Ricota">
-                    <div class="text">
-                        <div>
-                            <h3>Conchiglione de Espinafre e Ricota</h3>
-                            <p>Massa recheada com ricota e espinafre, gratinada com molho branco.</p>
-                            <button onclick="window.location.href='receita_conchiglione.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Sobremesas</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/ZzX6Jkm6hd0otJQyJtqyuEMz4.jpeg?scale-down-to=512" alt="Bombom de Morango na Travessa">
-                    <div class="text">
-                        <div>
-                            <h3>Bombom de Morango</h3>
-                            <p>Sobremesa gelada com combinação perfeita de morango e chocolate.</p>
-                            <button onclick="window.location.href='receita_bombom_de_morango.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/scf07JX5elTr5uSGQ1dAzOeHtI4.webp?scale-down-to=512" alt="Manjar de Coco">
-                    <div class="text">
-                        <div>
-                            <h3>Manjar de Coco</h3>
-                            <p>Doce cremoso de coco com cobertura de ameixas.</p>
-                            <button onclick="window.location.href='receita_Manjar_de_coco.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://framerusercontent.com/images/DfnM8sh6m7EyaUmdSkyFKQz5BI.webp?scale-down-to=512" alt="Cheesecake de Morango">
-                    <div class="text">
-                        <div>
-                            <h3>Cheesecake de Morango</h3>
-                            <p>Clássica cheesecake com cobertura de morango, preparada de forma rápida.</p>
-                            <button onclick="window.location.href='receita_cheesecake_de_morango.html'">Receita</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
+  <h1>Receitas Mágicas ✨</h1>
+
+  <!-- Aqui os cards serão gerados dinamicamente -->
+  <div id="catalogo-receitas"></div>
+
+  <!-- Modal de Detalhes -->
+  <div id="modal-receita" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <img id="modal-imagem" src="" alt="" style="max-width: 100%; margin-bottom: 10px;" />
+      <p id="modal-descricao"></p>
+      <p><strong>Categoria:</strong> <span id="modal-categoria"></span></p>
+      <h4>Ingredientes:</h4>
+      <ul id="modal-ingredientes"></ul>
+      <h4>Modo de Preparo:</h4>
+      <ol id="modal-preparo"></ol>
+      <button id="btCurtir">Curtir ❤️</button>
+      <span id="contador">0</span>
+    </div>
+  </div>
+
+
+  <!-- Script mágico -->
+  <script src="receitasMagicas.js"></script>
 </body>
 </html>
