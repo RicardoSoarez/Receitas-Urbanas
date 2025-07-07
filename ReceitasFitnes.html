@@ -1,133 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="desafio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Receitas fitnes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas Fitnes</title>
+  <link rel="stylesheet" href="desafio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1 class="desafios"></h1>
-    </header>
-    <main>
-        <section>
-            <h2>Bebidas</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://www.mundoboaforma.com.br/wp-content/uploads/2022/04/Suco-verde-detox.jpg" alt="suco Detox">
-                <div class="text">
-                    <div class="banner">
-                        <h3>Suco Detox Refrescante</h3>
-                        <p>Uma bebida gelada e refrescante</p>
-                        <button onclick="window.location.href='sucoDetox_.html'">Receitar</button>
-                    </div>
-                </div>                
-                </div>
 
-                <div class="card">
-                    <img src="https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/11/16135449/Vitamina-cacau-banana-whey-proteinas-2.jpg" alt="Smoothie">
-                    <div class="text">
-                        <div>
-                            <h3>Smoothie Proteico de Banana e Cacau</h3>
-                            <p> forma prática e rápida de acelerar o ganho de massa muscular</p>
-                            <button onclick="window.location.href='Smoothie.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
+  <header>
+    <h1>Receitas Fitnes 💪</h1>
+  </header>
 
-                <div class="card">
-                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/02/1733819787-cha-de-hibisco-com-limao.jpg" alt="limonada de Hibisco">
-                    <div class="text">
-                        <div>
-                            <h3>Limonada de Hibisco com Gengibre</h3>
-                            <p>"limonada, boa, gostosa e geladinha"</p>
-                            <button onclick="window.location.href='limonada.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
+  <main>
+    <!-- Aqui os cards serão gerados dinamicamente -->
+    <div id="catalogo-receitas"></div>
+  </main>
 
-            </div>
-        </section>
-        
-        <section>
-            <h2>Refeições</h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCRFtKn6tz9UavXpwyGHCvCDn-IIG67pCXA&s" alt="frango grelhado">
-                    <div class="text">
-                        <div>
-                            <h3>Frango Grelhado com Quinoa e Legumes</h3>
-                            <p>O básico que funciona!</p>
-                            <button onclick="window.location.href='frango_grelhado.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
+  <!-- Modal de Detalhes -->
+  <div id="modal-receita" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <img id="modal-imagem" src="" alt="" style="max-width: 100%; margin-bottom: 10px;" />
+      <p id="modal-descricao"></p>
+      <p><strong>Categoria:</strong> <span id="modal-categoria"></span></p>
+      <h4>Ingredientes:</h4>
+      <ul id="modal-ingredientes"></ul>
+      <h4>Modo de Preparo:</h4>
+      <ol id="modal-preparo"></ol>
+      <button id="btCurtir">Curtir ❤️</button>
+      <span id="contador">0</span>
+    </div>
+  </div>
 
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtLwa91GaBfLJP9hPmIgMZPQmnO22ztTVBtg&s" alt="omelete de Espinafre">
-                    <div class="text">
-                        <div>
-                            <h3>Omelete de Espinafre com Queijo Branco</h3>
-                            <p>Cansado de ovos cozidos? eu também! pega essa receita da casa</p>
-                            <button onclick="window.location.href='omeleteEspinafre.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-gpVutnmQ2iFwAM4jh3jnnJ2fNI0ebQCq3Q&s" alt="salda Proteica">
-                    <div class="text">
-                        <div>
-                            <h3>Salada Proteica de Atum e Grão-de-Bico</h3>
-                            <p>eei, ei, ei! nada de julgar o livro pela capa, hein!!!</p>
-                            <button onclick="window.location.href='saladaProteica.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </section>
-        
-        <section>
-            <h2> Sobremesas </h2>
-            <div class="container">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZS_KVxD5A9RV2t-HRJNrDS6u7Pdonq2fjg&s" alt="Mousse de Chocolate Fit">
-                    <div class="text">
-                        <div>
-                            <h3>Mousse de Chocolate Fit</h3>
-                            <p>Chocolate e "Fit" na mesma frase parece até menttira ne?!</p>
-                            <button onclick="window.location.href='moussefit.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnIPyyM_T7NTZeky2yIVIgggrpBDUX6LCNdw&s" alt="pudim de chia">
-                    <div class="text">
-                        <div>
-                            <h3>Pudim de Chia com Frutas</h3>
-                            <p>"PU-DIM!"</p>
-                            <button onclick="window.location.href='pudimfit.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tnPhye_95y90PkK_yybmcQhPAhHoCuz5Zg&s">
-                    <div class="text">
-                        <div>
-                            <h3>Sorvete de Banana com Amendoim</h3>
-                            <p>Um clássico, que não pode faltar</p>
-                            <button onclick="window.location.href='sorvetefit.html'">Receitar</button>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-        </section>
-    </main>
-
+  <!-- Script mágico -->
+  <script src="receitasMagicas.js"></script>
 </body>
 </html>
