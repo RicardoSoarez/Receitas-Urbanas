@@ -1,3 +1,8 @@
+/* Box sizing global */
+* {
+  box-sizing: border-box;
+}
+
 /* Fundo e tipografia */
 body {
   font-family: 'Roboto', sans-serif;
@@ -14,58 +19,62 @@ body {
 /* Títulos */
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #927c48;
   text-transform: uppercase;
-  margin: 30px 0 10px;
+  margin: 60px 0 30px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #ffffffc5;
   text-transform: uppercase;
-  margin: 40px 0 20px;
+  margin: 50px 0 30px;
   text-align: center;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.1rem;
   color: #ccc;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  line-height: 1.7;
+  margin-bottom: 16px;
   text-align: justify;
 }
 
 /* Container de cards */
-.container {
+.container,
+#catalogo-receitas {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  max-width: 800px;
+  gap: 50px;
+  padding: 60px 30px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* Card individual */
 .card {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   background-color: #0a0b0a;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease;
+  flex-wrap: wrap;
 }
 
 .card:hover {
@@ -74,44 +83,54 @@ p {
 
 /* Imagem do card */
 .card img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 /* Texto do card */
 .text {
   flex: 1;
+  min-width: 250px;
+  padding-top: 10px;
 }
 
 .text h3 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .text p {
-  margin: 0;
-  font-size: 16px;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
-/* Botão */
-.text button {
-  margin-top: 10px;
-  padding: 8px 14px;
+/* Botões */
+.text button,
+#btCurtir {
+  margin-top: 20px;
+  padding: 12px 20px;
   background-color: #927c48;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
   transition: background-color 0.2s ease;
 }
 
-.text button:hover {
+.text button:hover,
+#btCurtir:hover {
   background-color: #6e5f36;
+}
+
+#btCurtir.curtido {
+  background-color: #cc0000;
 }
 
 /* Modal */
@@ -123,23 +142,46 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  padding: 40px 20px;
 }
 
+/* Conteúdo do modal */
 .modal-content {
   background-color: #fff;
   color: #333;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
   max-width: 600px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.modal-content h2 {
-  color: #927c48;
+/* Elementos internos do modal */
+.modal-content h2,
+.modal-content p,
+.modal-content ul,
+.modal-content ol,
+.modal-content button,
+.modal-content img {
+  max-width: 100%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.modal-content img {
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .modal-content ul,
@@ -156,26 +198,15 @@ p {
   color: #333;
 }
 
-/* Botão de curtir */
-#btCurtir {
-  margin-top: 10px;
-  padding: 8px 14px;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#btCurtir.curtido {
-  background-color: #cc0000;
+/* Oculta o conteúdo principal quando o modal estiver aberto */
+.oculto {
+  display: none;
 }
 
 /* Rodapé */
 footer {
   background-color: #0a0b0a;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -189,6 +220,8 @@ footer p {
   .card {
     flex-direction: column;
     align-items: flex-start;
+    padding: 30px;
+    gap: 24px;
   }
 
   .card img {
@@ -198,5 +231,34 @@ footer p {
 
   .text {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 24px;
+  }
+
+  .text button,
+  #btCurtir {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
   }
 }
