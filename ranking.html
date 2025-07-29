@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ranking.css">
 </head>
 <body>
+    <div class="ranking-wrapper">
     <div class="container">
         <h1>Ranking de Usuários</h1>
         <table class="ranking-table">
@@ -18,58 +19,73 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1º</td>
-                    <td>João Silva</td>
-                    <td>1000 pontos</td>
-                </tr>
+          <tr>
+            <td>1º</td>
+            <td class="user-name" data-user="joao">João Silva</td>
+            <td>1000 pontos</td>
+          </tr>
                 <tr>
                     <td>2º</td>
-                    <td>Maria Oliveira</td>
+                    <td class="user-name" data-user="maria">Maria Oliveira</td>
                     <td>950 pontos</td>
                 </tr>
                 <tr>
                     <td>3º</td>
-                    <td>Carlos Souza</td>
+                    <td class="user-name" data-user="carlos">Carlos Souza</td>
                     <td>900 pontos</td>
                 </tr>
                 <tr>
                     <td>4º</td>
-                    <td>Ana Costa</td>
+                    <td class="user-name" data-user="ana">Ana Costa</td>
                     <td>850 pontos</td>
                 </tr>
                 <tr>
                     <td>5º</td>
-                    <td>Pedro Santos</td>
+                    <td class="user-name" data-user="pedro">Pedro Santos</td>
                     <td>800 pontos</td>
                 </tr>
                 <tr>
                     <td>6º</td>
-                    <td>Luiza Fernandes</td>
+                    <td class="user-name" data-user="luiza">Luiza Fernandes</td>
                     <td>750 pontos</td>
                 </tr>
                 <tr>
                     <td>7º</td>
-                    <td>Rafael Lima</td>
+                    <td class="user-name" data-user="rafael">Rafael Lima</td>
                     <td>700 pontos</td>
                 </tr>
                 <tr>
                     <td>8º</td>
-                    <td>Fernanda Alves</td>
+                    <td class="user-name" data-user="fernanda">Fernanda Alves</td>
                     <td>650 pontos</td>
                 </tr>
                 <tr>
                     <td>9º</td>
-                    <td>Gabriel Pereira</td>
+                    <td class="user-name" data-user="gabriel">Gabriel Pereira</td>
                     <td>600 pontos</td>
                 </tr>
                 <tr>
                     <td>10º</td>
-                    <td>Juliana Rocha</td>
+                    <td class="user-name" data-user="juliana">Juliana Rocha</td>
                     <td>550 pontos</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div class="Metodo avaliativo">
+        <h2>Método de Avaliação</h2>
+        <p>O ranking é atualizado semanalmente com base na pontuação dos usuários, que é calculada através de:</p>
+        <ul>
+            <li>Participação em desafios culinários</li>
+            <li>Envio de receitas</li>
+            <li>Interações na comunidade</li>
+            <li>Feedback de outros usuários</li>
+            <li>Número de curtidas em cada receita</li>
+        </ul>
+        <p>Os usuários podem ganhar pontos extras por criatividade e inovação nas receitas enviadas.</p>
+    </div>   
+    </div> 
+    <script src="ranking.js"></script>
+    <a href="Inicio.html"> voltar </a>
 </body>
 </html>
