@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas SOS</title>
+  <link rel="stylesheet" href="desafio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>Receitas SOS ⚡</h1>
+  </header>
+
+  <main>
+    <div id="catalogo-receitas"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-receita" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <img id="modal-imagem" src="" alt="" style="max-width: 100%; margin-bottom: 10px;" />
+      <p id="modal-descricao"></p>
+      <p><strong>Categoria:</strong> <span id="modal-categoria"></span></p>
+      <h4>Ingredientes:</h4>
+      <ul id="modal-ingredientes"></ul>
+      <h4>Modo de Preparo:</h4>
+      <ol id="modal-preparo"></ol>
+      <button id="btCurtir">Curtir ❤️</button>
+      <span id="contador">0</span>
+    </div>
+  </div>
+
+  <script src="receitasMagicas.js"></script>
+</body>
+</html>
