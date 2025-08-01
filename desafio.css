@@ -24,12 +24,13 @@ h1 {
   color: #927c48;
   text-transform: uppercase;
   margin: 60px 0 30px;
+  
 }
 
 h2 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffffc5;
+  color: #927c48;
   text-transform: uppercase;
   margin: 50px 0 30px;
   text-align: center;
@@ -45,12 +46,15 @@ h3 {
 
 p {
   font-size: 1.1rem;
-  color: #ccc;
+  color: #927c48;
   line-height: 1.7;
   margin-bottom: 16px;
   text-align: justify;
 }
 
+#btCurtir{
+  color: #fff;
+}
 /* Container de cards */
 .container,
 #catalogo-receitas {
@@ -71,7 +75,7 @@ p {
   background-color: #0a0b0a;
   padding: 40px;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(19, 18, 18, 0.08);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease;
   flex-wrap: wrap;
@@ -150,7 +154,7 @@ p {
 /* Conteúdo do modal */
 .modal-content {
   background-color: #fff;
-  color: #333;
+  color: #927c48;
   margin: auto;
   padding: 40px;
   border-radius: 12px;
