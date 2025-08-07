@@ -15,19 +15,17 @@
             <ul>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
                 <li><a href="suaReceita.html">Envie sua receita</a></li>
-                <li><a href="sugestões.html">Sugestões </a></li>
-                <li> <a href="perfil.html">Perfil</a></li>
-                <li> <a href="login.html">Login</a></li>
-                <li> <a href="ranking.html">Ranking</a></li>
+                <li><a href="sugestoes.html">Sugestões</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
                 
             </ul>
-            <div class="search-wrapper">
-                <input type="text" id="campoBusca" placeholder="Buscar receitas..." />
-                <button id="btnSearchReceitas">
-                <i class="fas fa-search"></i>
-    </button>
-</div>
         </nav>
+        <div class="search-wrapper">
+            <input type="text" id="campoBusca" placeholder="Buscar receitas..." />
+            <button id="btnSearchReceitas"><i class="fas fa-search"></i></button>
+        </div>
         <div class="social-icons">
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -54,31 +52,48 @@
                 </div>
             </div>
             <div class="texto-justificado">
-                <div class=" card card-SOS" id="SOS">
-                    <p><a href="SOS.html">Não sabe o que fazer? está no lugar certo!</a></p>
+                <div class="card card-SOS" id="SOS">
+                    <p><a href="SOS.html">Não sabe o que fazer? Está no lugar certo!</a></p>
                     <h3><a href="SOS.html">SOS</a></h3>
                 </div>
             </div>
-                <div class="texto-justificado">
-                    <div class="card card-fitnes" id="fitnes">
-                        <p><a href="ReceitasFitnes.html">Nem só de batata viverá o boddybuilder</a></p>
-                        <h3><a href="ReceitasFitnes.html">Fitnes</a></h3>
-                    </div>
-                </div>
-                <div class="texto-justificado">
-                    <div class="card card-sobre" id="sobre">
-                        <p><a href="sobre.html">Conheça mais sobre o site e nossa missão.</a></p>
-                        <h3><a href="sobre.html">Sobre</a></h3>
-                    </div>
-                </div>
             <div class="texto-justificado">
-                <div class="card card-opções" id="opcoes">
-                    <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
+                <div class="card card-fitnes" id="fitnes">
+                    <p><a href="ReceitasFitnes.html">Nem só de batata viverá o bodybuilder</a></p>
+                    <h3><a href="ReceitasFitnes.html">Fitnes</a></h3>
+                </div>
+            </div>
+            <div class="texto-justificado">
+                <div class="card card-sobre" id="sobre">
+                    <p><a href="sobre.html">Conheça mais sobre o site e nossa missão.</a></p>
+                    <h3><a href="sobre.html">Sobre</a></h3>
+                </div>
+            </div>
+            <div class="texto-justificado">
+                <div class="card card-opcoes" id="opcoes">
+                    <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos.</a></p>
                     <h3><a href="opcoes.html">Opções</a></h3>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal de Receita -->
+    <div id="modal-receita" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <p id="modal-categoria"></p>
+            <img id="modal-imagem" src="" alt="" />
+            <h3>Ingredientes</h3>
+            <ul id="modal-ingredientes"></ul>
+            <h3>Modo de Preparo</h3>
+            <ul id="modal-preparo"></ul>
+            <button id="btCurtir"><i class="fas fa-heart"></i> Curtir</button>
+            <p id="contador">0</p>
+        </div>
+    </div>
 
     <footer>
         <div class="social-icons">
@@ -90,6 +105,7 @@
         <p>&copy; 2025 Receitas Urbanas. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="scripts.js"></script>
 </body>
 </html>
