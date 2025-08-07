@@ -19,7 +19,6 @@ function openTab(evt, tabName) {
 }
 
 const contatoForm = document.getElementById('contatoForm');
-// Verifica se o formulário de contato realmente existe nesta página
 if (contatoForm) {
     contatoForm.addEventListener('submit', function (event) {
         event.preventDefault();
