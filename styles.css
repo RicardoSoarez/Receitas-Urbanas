@@ -181,6 +181,40 @@ footer {
 footer p {
     margin: 10px 0;
 }
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-wrapper input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px;
+}
+
+.search-wrapper button {
+    padding: 10px 15px;
+    background-color: #ff6347; /* cor tomate */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.search-wrapper button:hover {
+    background-color: #e5533d;
+}
+
+.search-wrapper i.fas.fa-search {
+    pointer-events: none;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -204,4 +238,4 @@ footer p {
     .card {
         width: 90%;
     }
-
+}
