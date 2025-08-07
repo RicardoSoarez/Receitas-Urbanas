@@ -171,6 +171,62 @@ a:hover {
     margin: 0;
     visibility: hidden;
 }
+.surpresa-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#surpresaBtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#surpresaBtn:hover {
+    background-color: #c0392b;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    text-align: left;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
 
 footer {
     background-color: #0a0b0a;
