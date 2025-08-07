@@ -2,9 +2,10 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>Receitas Urbanas</title>
     <meta name="description" content="Um site voltado para auxiliar você que tem interesse na cozinha e quer sair da mesmice.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,53 +13,89 @@
         <h1>Receitas Urbanas</h1>
         <nav>
             <ul>
-                <li><a href="#desafios">Desafios</a></li>
-                <li><a href="#opcoes">Opções</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="suaReceita.html">Envie sua receita</a></li>
+                <li><a href="sugestões.html">Sugestões </a></li>
+                <li> <a href="perfil.html">Perfil</a></li>
+                <li> <a href="login.html">Login</a></li>
+                <li> <a href="ranking.html">Ranking</a></li>
+                <li><a href="pesquisa.html">Pesquisa</a></li>
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.instagram.com/gola.design/"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://templates.gola.io/"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com/gola99"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
 
     <section class="hero">
         <video autoplay loop muted>
-            <source src="hero-video.mp4" type="video/mp4">
+            <source src="https://framerusercontent.com/assets/KNjmnFp5kwda6KegO13wieYyI0.mp4" type="video/mp4">
         </video>
         <div class="hero-text">
-            <h2>Receitas Urbanas</h2>
+            <h2>Sua fome no lugar certo!</h2>
             <p>Descubra novas receitas e desafios culinários!</p>
         </div>
     </section>
 
     <section class="content">
-        <div class="card" id="desafios">
-            <h3>Desafios</h3>
-            <p>Participe de desafios culinários e mostre suas habilidades!</p>
+        <div class="card-container">
+            <div class="texto-justificado">
+                <div class="card card-desafios" id="desafios">
+                    <p><a href="Desafio.html">Participe de desafios culinários e mostre suas habilidades!</a></p>
+                    <h3><a href="Desafio.html">Desafios</a></h3>
+                </div>
+            </div>
+            <div class="texto-justificado">
+                <div class=" card card-SOS" id="SOS">
+                    <p><a href="SOS.html">Não sabe o que fazer? está no lugar certo!</a></p>
+                    <h3><a href="SOS.html">SOS</a></h3>
+                </div>
+            </div>
+                <div class="texto-justificado">
+                    <div class="card card-fitnes" id="fitnes">
+                        <p><a href="ReceitasFitnes.html">Nem só de batata viverá o boddybuilder</a></p>
+                        <h3><a href="ReceitasFitnes.html">Fitnes</a></h3>
+                    </div>
+                </div>
+                <div class="texto-justificado">
+                    <div class="card card-sobre" id="sobre">
+                        <p><a href="sobre.html">Conheça mais sobre o site e nossa missão.</a></p>
+                        <h3><a href="sobre.html">Sobre</a></h3>
+                    </div>
+                </div>
+            <div class="texto-justificado">
+                <div class="card card-opções" id="opcoes">
+                    <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
+                    <h3><a href="opcoes.html">Opções</a></h3>
+                </div>
+            </div>
         </div>
-        <div class="card" id="opcoes">
-            <h3>Opções</h3>
-            <p>Explore diferentes opções de receitas para todos os gostos.</p>
-        </div>
-        <div class="card" id="sobre">
-            <h3>Sobre Nós</h3>
-            <p>Conheça mais sobre o site e nossa missão.</p>
-        </div>
+        
     </section>
+<div class="surpresa-container">
+    <button id="surpresaBtn" title="Clique para receber uma receita aleatória!">
+        <i class="fas fa-random"></i> Me surpreenda!
+    </button>
+</div>
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.instagram.com/gola.design/"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://templates.gola.io/"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://twitter.com/gola99"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
         <p>Contato: contato@receitasurbanas.com</p>
-        <p>&copy; 2023 Receitas Urbanas. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Receitas Urbanas. Todos os direitos reservados.</p>
     </footer>
-
+    <div id="popupReceita" class="popup hidden">
+    <div class="popup-content">
+        <span id="fecharPopup" class="close-btn">&times;</span>
+        <h2 id="receitaTitulo"></h2>
+        <p id="receitaDescricao"></p>
+    </div>
+</div>
     <script src="scripts.js"></script>
 </body>
 </html>
