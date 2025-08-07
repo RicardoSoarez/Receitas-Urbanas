@@ -127,7 +127,7 @@ const receitas = [
   categoria: "Desafios",
   tipo: "Drinks",
   descricao: "Drink italiano preparado com gin, campari e vermute tinto",
-  imagem: "https://www.allrecipes.com/thmb/RB7pCbCSAa2zNvZ5QZErB87K-BA=/1500x0/filters:no_upscale()/margarita.jpg",
+  imagem: "https://canaldareceita.com.br/wp-content/uploads/2025/02/MARGARITA.jpg",
   ingredientes: ["Tequila", "Triple sec", "Suco de limão", "Sal para a borda"],
   preparo: ["Bata tudo com gelo", "Sirva em copo com borda de sal"],
   curtidas: 0,
