@@ -84,3 +84,28 @@ btn.addEventListener("click", () => {
 fechar.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
+
+// Para a barra de pesquisa
+document.querySelector('.search-container form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+    // Aqui você implementaria a lógica de filtragem
+    alert(`Buscando por: ${searchTerm}`); // Exemplo básico
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropbtn = document.querySelector(".dropbtn");
+    const dropdown = document.querySelector(".dropdown");
+
+    dropbtn.addEventListener("click", function () {
+        dropdown.classList.toggle("show");
+    });
+
+    // Fecha o menu se clicar fora dele
+    window.addEventListener("click", function (e) {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
+});
+

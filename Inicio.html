@@ -11,6 +11,26 @@
 <body>
     <header>
         <h1>Receitas Urbanas</h1>
+        <div class="dropdown">
+    <button class="dropbtn">Escolher categoria</button>
+    <div class="dropdown-content">
+        <a href="Desafio.html">Desafios</a>
+        <a href="SOS.html">SOS</a>
+        <a href="ReceitasFitnes.html">Fitness</a>
+    </div>
+</div>
+
+<div class="search-container">
+    <form onsubmit="event.preventDefault(); buscarReceitas(this.search.value)">
+        <input type="text" placeholder="Buscar receitas..." name="search" class="search-input" id="searchInput">
+        <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+        <button type="button" onclick="document.getElementById('searchInput').value = ''; buscarReceitas('')" 
+                class="btn-limpar">Limpar</button>
+    </form>
+</div>
+</div>
         <nav>
             <ul>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
@@ -19,7 +39,6 @@
                 <li> <a href="perfil.html">Perfil</a></li>
                 <li> <a href="login.html">Login</a></li>
                 <li> <a href="ranking.html">Ranking</a></li>
-                <li><a href="pesquisa.html">Pesquisa</a></li>
             </ul>
         </nav>
         <div class="social-icons">
@@ -38,36 +57,35 @@
             <p>Descubra novas receitas e desafios culinários!</p>
         </div>
     </section>
-
     <section class="content">
         <div class="card-container">
             <div class="texto-justificado">
                 <div class="card card-desafios" id="desafios">
-                    <p><a href="Desafio.html">Participe de desafios culinários e mostre suas habilidades!</a></p>
+                    <p><a href="Desafio.html">Não sabe o que fazer? está no lugar certo!</a></p>
                     <h3><a href="Desafio.html">Desafios</a></h3>
                 </div>
             </div>
             <div class="texto-justificado">
                 <div class=" card card-SOS" id="SOS">
-                    <p><a href="SOS.html">Não sabe o que fazer? está no lugar certo!</a></p>
+                    <p> <a href="SOS.html">Não sabe o que fazer? está no lugar certo!</a></p>
                     <h3><a href="SOS.html">SOS</a></h3>
                 </div>
             </div>
                 <div class="texto-justificado">
                     <div class="card card-fitnes" id="fitnes">
-                        <p><a href="ReceitasFitnes.html">Nem só de batata viverá o boddybuilder</a></p>
+                        <p><a href="ReceitasFitnes.html">Não sabe o que fazer? está no lugar certo!</a></p>
                         <h3><a href="ReceitasFitnes.html">Fitnes</a></h3>
                     </div>
                 </div>
                 <div class="texto-justificado">
                     <div class="card card-sobre" id="sobre">
-                        <p><a href="sobre.html">Conheça mais sobre o site e nossa missão.</a></p>
+                        <p><a href="sobre.html">Não sabe o que fazer? está no lugar certo!</a></p>
                         <h3><a href="sobre.html">Sobre</a></h3>
                     </div>
                 </div>
             <div class="texto-justificado">
                 <div class="card card-opções" id="opcoes">
-                    <p><a href="opcoes.html">Explore diferentes opções de receitas para todos os gostos</a>.</p>
+                    <p><a href="opcoes.html">Não sabe o que fazer? está no lugar certo!</a>.</p>
                     <h3><a href="opcoes.html">Opções</a></h3>
                 </div>
             </div>
