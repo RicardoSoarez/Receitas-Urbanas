@@ -10,6 +10,53 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/* Container do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+     z-index: 9999; /* fica na frente de tudo */
+}
+
+/* Botão principal */
+.dropbtn {
+    background-color: #927c48;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Conteúdo do dropdown (inicialmente escondido) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover nos links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar o dropdown quando ativo */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
 
 
 header {
@@ -172,6 +219,35 @@ a:hover {
     visibility: hidden;
 }
 
+
+.search-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px 15px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background: #927c48;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background: #927c48;
+
 .surpresa-container {
     text-align: center;
     margin-top: 20px;
@@ -226,6 +302,7 @@ a:hover {
 
 .hidden {
     display: none;
+
 }
 .surpresa-container {
     text-align: center;
@@ -233,7 +310,64 @@ a:hover {
 }
 
 #surpresaBtn {
-    background-color: #e74c3c;
+    background-color: #927c48;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#surpresaBtn:hover {
+    background-color: #927c48;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    text-align: left;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #927c48;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.surpresa-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#surpresaBtn {
+    background-color: #927c48;
     color: white;
     border: none;
     padding: 12px 20px;
